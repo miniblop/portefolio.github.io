@@ -4,6 +4,9 @@
 }
 p{
 	padding-left:15px;
+	text-align:justify;
+	padding-right:15px;
+	margin:0 auto;
 }
 
 body {
