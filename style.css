@@ -6,7 +6,6 @@ p{
 	padding-left:15px;
 	text-align:justify;
 	padding-right:15px;
-	margin:0 auto;
 }
 
 body {
@@ -21,11 +20,13 @@ article{
 	margin : 0 auto;
 	width: 973px;
 	min-height: 600px;
-	padding-bottom:15px;
+	
 }
 h1{
 	color: white;
 	background-color:#ae2573;
+	padding-left:15px;
+	margin-bottom:15px;
 }
 dl{
 	padding:0.5em;	
@@ -54,6 +55,7 @@ table{
 table,thead{
 	margin: 0 auto;
 	text-align:center;
+	padding-left:15px;
 }
 table,th,tr{
 	border: 1px solid black;
