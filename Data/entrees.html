@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description"  content="Example" />
+    <meta name="author"  content="Maxime MORGE" />    
+    <meta name="keywords"  content="Démographie, Immigration, Population" />    
+    <title>Flux d'entrée d'immigrés permanents</title>
+    <link rel="stylesheet" type="text/css" href="Librairie/jquery-ui.css" />
+    <link rel="stylesheet" href="exemple.css" />
+    <script src="entrees.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <a href="http://www.univ-lille.fr">
+	<img src="Icons/lille.png" alt="Université de Lille"/>
+      </a>
+      <nav>
+	<ul>
+	  <li id="home"><a href="index.html">&nbsp;</a></li>
+	  <li>
+	    Démographie
+	    <ul>
+	      <li><a href="population.html">Population</a></li>
+	      <li><a href="fecondite.html">Taux de fécondité</a></li>
+	    </ul>
+	  </li>
+	  <li>
+	    Migration
+	    <ul>
+	      <li><a href="etranger.html">Population étrangère</a></li>
+	      <li><a href="entrees.html">Entrées d'immigrées</a></li>
+	    </ul>
+	  </li>
+	</ul>
+      </nav>
+    </header>
+    <article>
+      <h1>Flux d'entrée d'immigrés permanents</h1>
+          <form>
+	    <fieldset>
+	      <legend>Années</legend>
+	      <input type=checkbox name=year value="2012" id="y2012" class="year" onchange="filter(this.name)" checked/>
+	      <label for="y2012">2012</label>
+	      <input type=checkbox name=year value="2013" id="y2013" class="year" onchange="filter(this.name)" checked/>
+	      <label for="y2013">2013</label>
+	      <input type=checkbox name=year value="2014" id="y2014" class="year" onchange="filter(this.name)" checked/>
+	      <label for="y2014">2014</label>
+	    </fieldset>      
+	    <fieldset>
+	      <legend>Pays</legend>
+	      <input type=checkbox name=country value="FRA" id="fra" class="country" onchange="filter(this.name)" checked/>
+	      <label for="fra">FR</label>
+	      <input type=checkbox name=country value="DEU" id="deu" class="country" onchange="filter(this.name)" checked/>
+	      <label for="deu">DEU</label>
+	    </fieldset>
+	    <fieldset>
+	      <legend>Agrégation</legend>
+	      <input type=radio name=operator value="sum" id="sum" class="operator" onchange="agregate()" checked/>
+	      <label for="sum">Somme</label><br/>
+	      <input type=radio name=operator value="mean" id="mean" class="operator" onchange="agregate()"/>
+	      <label for="mean">Moyenne</label><br/>
+	    </fieldset>	    
+	  </form>
+      <table>
+	<caption>Flux d'entrée d'immigrés permanents</caption>
+	<thead>
+	  <tr>
+	    <th></th>
+	    <th class="FRA">FRA</th>
+	    <th class="DEU">DEU</th>
+	    <th class="agregation title">Total</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr id="2012">
+	    <th>2012</th>
+	    <td id="FRA2012" class="FRA">245838</td>
+	    <td id="DEU2012" class="DEU">400197</td>
+	    <td id="agregation2012" class="agregation">425035</td>
+	  </tr>	
+	 <tr id="2013">
+	    <th>2013</th>
+	    <td id="FRA2013" class="FRA">255584</td>
+	    <td id="DEU2013" class="DEU">468822</td>
+	    <td id="agregation2013" class="agregation">724406</td>
+	 </tr>
+	 <tr id="2014">
+	    <th>2014</th>
+	    <td id="FRA2014" class="FRA">251924</td>
+	    <td id="DEU2014" class="DEU">574467</td>
+	    <td id="agregation2014" class="agregation">826391</td>
+	 </tr>
+	  <tr id="agregation">
+	    <th class="agregation title" >Total</th>
+	    <td class="FRA agregation" class="FRA" id="agregationFRA">753346</td>
+	    <td class="DEU agregation" class="DEU" id="agregationDEU">1443486</td>
+	    <td class="agregation" id="agregationFinal">2196832</td>
+	 </tr>
+	</tbody>
+	</table>    
+    </article>
+    <footer>
+      <p>Cité Scientifique, bâtiment SH3, 59655 Villeneuve d'Ascq Cedex Tél. +33 (0) 3 20 77 84 27</p>
+    </footer>
+  </body>
+</html>

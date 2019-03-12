@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Titre</title>
+    </head>
+
+    <body>
+    <title>Datavisualisation de données démographiques</title>
+    <p>L'Organisation de coopération et de développement économique (OCDE) a, en 1961, succédé à l'Organisation européenne de coopération économique (OECE), fondée en 1948 pour gérer l'aide américaine d'après-guerre (plan Marshall). ... L'OCDE est le principal rassembleur de statistiques sur les pays développés.</p>
+    
+    </body>
+</html>

@@ -1,0 +1,205 @@
+*{
+	margin:0;
+ 	padding:0;
+}
+p{
+	padding-left:15px;
+}
+
+body {
+	background-color:#cdcdcd;
+	color : #000000;
+ 	font-family: "Trebuchet MS", arial, Helvetica,sans-serif;
+ 	font-size: 14px;
+ 	font-color:black;
+}
+article{
+	background-color: white;
+	margin : 0 auto;
+	width: 973px;
+	min-height: 600px;
+	padding-bottom:15px;
+}
+h1{
+	color: white;
+	background-color:#ae2573;
+}
+dl{
+	padding:0.5em;	
+}
+dt{
+	width:200px;
+	float: left;
+	clear: left;
+	text-align: right;
+	font-weight: bold; 
+	color:#ae2573;
+	margin:0 auto;
+}
+dt:after{
+	content:" :  ";
+}
+dd{
+	margin-left:210px;
+	padding-right: 0.5em;
+}
+table{
+	margin:0 auto;
+	border-collapse : collapse;
+	border: solid 1px;
+}
+table,thead{
+	margin: 0 auto;
+	text-align:center;
+}
+table,th,tr{
+	border: 1px solid black;
+	padding: 15px;
+}
+table td{
+	padding:15px;
+	text-align: center;
+	margin:0 auto;
+	border: solid 1px;
+}
+.total{
+	font-style: italic;
+}
+header{
+	background-color: white;	
+	width: 973px;
+	margin: 0 auto;
+	min-height: 100px;
+}
+li#home{
+	background-image: url('home.jpg');
+	background-repeat:no-repeat;
+}
+li#home:hover{
+	background-image: url('home-hover.jpg');
+	background-repeat: no-repeat;
+}
+
+nav ul li{
+	display: inline;
+	background-image: url('puceMenu.jpg');
+	background-repeat: no-repeat;
+	padding-left: 15px;
+	padding-right:20px;
+}
+
+nav ul ul{
+	display: none;
+	width:100px;
+	margin: 0 -15px 0;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+nav ul {
+	list-style : none;
+	position : relative;
+	display: inline-table;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li:hover{
+	color:#ae2573;
+}
+
+nav ul ul {
+	background: white;
+	position : absolute;
+	top : 100%;
+}
+
+nav ul ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+nav ul ul li a:hover{
+	color #ae2573
+}
+
+nav ul li#{
+	padding-left: 0;
+}
+
+nav ul li a{
+	text-decoration :none;
+}
+
+footer{
+	background-image: url("footer.jpg");
+	background-repeat: no-repeat;
+	width:973px;
+	height:154px;
+	margin: 0 auto;
+}
+
+footer p{
+	color:white;
+	margin-left:60px;
+	padding-top:110px;
+}
+footer a{
+	color:white;
+	text-decoration:none;
+}
+footer a:hover{
+	font-weight: 
+}
+
+select{
+	margin-left:15px;
+}
+
+form, fieldset {
+margin: 10px;
+padding: 10px;
+}
+.rectangle {
+	fill: #ae2573;
+}
+.rectangle:hover {
+	fill: black;
+}
+
+path {
+stroke-width: 2px;
+fill: none;
+}
+
+.axis path,.axis line {
+fill: none;
+stroke: grey;
+stroke-width: 1px;
+}
+
+.legend {
+font-size: 16px;
+font-weight: bold;
+text-anchor: middle;
+}
+
+#states path {
+fill: #ccc;
+stroke: #fff;
+}
+
+circle {
+fill: #ae2573;
+fill-opacity: .6;
+stroke: #fff;
+}
+
+#title{
+	text-transform : capitalize;
+	font-weight: bold;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" media="screen" type="text/css" href="style.css"/>
+        <meta charset="utf-8" />
+        <title>Etranger</title>
+    </head>
+
+    
+    <body>
+    <header>
+        <a href="https://www.univ-lille.fr/"><img src="lille.png" alt="Site de l'université"/></a>
+     <nav>
+            <ul>
+                <li id = "home"><a href="index.html">&nbsp;&nbsp;&nbsp;</a></li>
+                <li > Démographie
+                    <ul>
+                        <li><a href="population.html">Population</a></li>
+                        <li><a href="fecondite.html">Fecondidte</a></li>
+                    </ul>
+                </li>
+                    <li> Migration
+                    <ul>
+                        <li><a href="entrees.html">Entrées</a></li>
+                        <li id="niveau1"><a href="etranger.html">Etranger</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>  
+    	<h1>Etranger</h1>
+    </header>	
+  <article>
+   <div id="graph"></div>
+<p>
+<label for="year">Year :</label><input type="text" id="year" />
+</p>
+<div id="slider" style="width: 200px;"></div>
+<script src="Librairie/jquery-2.1.1.min.js"></script>
+<script src="Librairie/jquery-ui.min.js"></script>
+<script src="Librairie/d3.v3.min.js"></script>
+<script src="Script/etranger.js"></script>
+   </article>
+
+
+
+    <footer>
+    <p>&copy Rémi Defonte : remi.defonte@gmail.com</p>
+    </footer>
+    
+    </body>
+</html>

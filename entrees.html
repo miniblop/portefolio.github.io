@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" media="screen" type="text/css" href="style.css"/>
+        <meta charset="utf-8" />
+        <title>Titre</title>
+    </head>
+
+    
+    <body>
+    <header>
+        <a href="https://www.univ-lille.fr/"><img src="lille.png" alt="Site de l'université"/></a>
+        <nav>
+            <ul>
+                <li id = "home"><a href="index.html">&nbsp;&nbsp;&nbsp;</a></li>
+                <li > Démographie
+                    <ul>
+                        <li><a href="population.html">Population</a></li>
+                        <li><a href="fecondite.html">Fecondidte</a></li>
+                    </ul>
+                </li>
+                    <li> Migration
+                    <ul>
+                        <li><a href="entrees.html">Entrées</a></li>
+                        <li id="niveau1"><a href="etranger.html">Etranger</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>    
+    	<h1>Tableau croisé pour les flux d'entrée d'immigrés permanents</h1><br>
+    </header>
+    <article>	
+      <table>
+          <thead>Flux d'entrée d'immigrés permanents</thead>
+          <tr>
+              <td>...</td>
+              <td class="tdFRA"><b>FRA</b></td>
+              <td class="tdDEU"><b>DEU</b></td>
+              <td id="title"><b>Aggregation</b></td>
+          </tr>
+          <tr id="tr2012">
+              <td><b>2012</b></td>
+              <td class="tdFRA" id="tdFRA2012">245838</td>
+              <td class="tdDEU" id="tdDEU2012">400197</td>
+              <td class="agregation" id="agregation2012">425035</td>
+          </tr >
+          <tr id="tr2013">
+              <td><b>2013</b></td>
+              <td class="tdFRA" id="tdFRA2013">255584</td>
+              <td class="tdDEU" id="tdDEU2013">468822</td>
+              <td class="agregation" id="agregation2013">724406</td>
+          </tr>
+          <tr id="tr2014">
+              <td><b>2014</b></td>
+              <td class="tdFRA" id="tdFRA2014">251924</td>
+              <td class="tdDEU" id="tdDEU2014">574467</td>
+              <td class="agregation" id="agregation2014">826391</td>
+
+          </tr>
+          <tr id="tragregation">
+              <td class="total"><b>Total</b></td>
+              <td class="total tdFRA" id="agregationFRA">753346</td>
+              <td class="total tdDEU" id="agregationDEU">1443486</td>
+              <td class="total agregation" id="agregationFinale">2196832</td>
+          </tr>
+      </table>
+      <form>
+      <fieldset>
+            <LEGEND>Années</LEGEND>
+                <input type="checkbox" name="2012" value="2012" id="2012" class="year" onchange="filter(this.name)" checked/>
+                <label for="2012"> 2012 </label><br/>
+                <input type="checkbox" name="2013" value="2013" id="2013" class="year" onchange="filter(this.name)" checked/>
+                <label for="2013"> 2013 </label><br/>
+                <input type="checkbox" name="2014" value="2014" id="2014" class="year" onchange="filter(this.name)" checked/>
+                <label for="2013"> 2014 </label><br/>
+      </fieldset>
+     <fieldset>
+            <LEGEND>Pays</LEGEND>
+                <input type="checkbox" name="FRA" onchange="filter(this.name)" value="fra" id="fra" class="pays" checked/>
+                <label for="fra"> France </label><br/>
+                <input type="checkbox" name="DEU" value="deu" id="deu" class="pays" onchange="filter(this.name)" checked/>
+                <label for="DEU"> Allemagne </label><br/>
+      </fieldset>
+      <fieldset>
+            <LEGEND>Aggregation</LEGEND>
+                <input type="radio" name="agregate" value="somme" id="somme" class="agregation" onchange="agregation()"/>
+                <label for="sum"> Somme </label><br/>
+                <input type="radio" class="agregation" name="agregate" value="moyenne" id="moyenne" onchange="agregation()" checked/>
+                <label for="avg"> Moyenne </label><br/>
+      </fieldset>
+      </form>
+      <script src="script/tp.js"></script>
+  </article>
+  </article>
+      </article>
+    <footer>
+    <p>&copy Rémi Defonte : remi.defonte@gmail.com</p>
+    </footer>
+    
+    </body>
+</html>
